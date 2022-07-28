@@ -44,6 +44,13 @@ body {
 
 /*#endregion - end of - feedback section */
 
+/*#region - start of - footer */
+.social-nav .nav-link svg {
+  width: 2rem;
+  height: 2rem;
+}
+/*#endregion - end of - footer */
+
 /* for mobile devices */
 @media (max-width: 1199.98px) {
   /* start of - Offcanvas fixed-top main navigation */
