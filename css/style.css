@@ -61,5 +61,13 @@ body {
     height: 44rem;
   }
   /*#endregion - end of - header section */
+
+  /*#region - start of - explore section */
+  .explore-img {
+    max-height: 45rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*#endregion - end of - explore section */
 }
 /*#endregion - end of - extra large devices */
