@@ -342,13 +342,33 @@
     <!--#endregion - end of - explore section -->
 
 
+    <!--#region - start of - newsletter section -->
+    <section class="newsletter pt-5 mt-5 mb-3">
+        <div class="container-md">
+            <div class="row justify-content-center align-items-center text-center text-xl-start py-5 g-0 bg-info rounded">
+                <div class="col-md-9 col-xl-7 px-3">
+                    <article class="text-white">
+                        <h2 class="fs-1 mb-3">Ready to join?</h2>
+                        <p class="text-dark mb-xl-0 col-xl-9 px-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                    </article>
+                </div>
+                <div class="col-xl-3 px-3 text-xl-end">
+                    <!-- Register modal trigger button -->
+                    <button type="button" class="btn bg-white py-2 text-info px-4" data-bs-toggle="modal" data-bs-backdrop="false" data-bs-target="#register-modal">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#endregion - end of - newsletter section -->
+
+
     <!--#region - start of - Register modal -->
     <div class="modal fade" id="register-modal" tabindex="-1" aria-labelledby="register-modal-label" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <form action="#">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="register-modal-label">Enter your name and email to proceed.</h5>
+                    <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="register-modal-label">Enter your name & email.</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body ">
@@ -361,9 +381,9 @@
                             <label for="reg-email">Email address</label>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success">Submit</button>
+                    <div class="modal-footer border-top-0">
+                        <button type="button" class="btn btn-secondary px-4 shadow-sm" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-success px-4 shadow-sm">Join</button>
                     </div>
                 </form>
             </div>
