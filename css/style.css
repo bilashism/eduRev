@@ -2,4 +2,35 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/*#region - start of - helper classes */
+.logo-svg {
+  width: 5rem;
+  height: 2rem;
+}
+
+/*#endregion - end of - helper classes */
 /*#endregion - end of - global styles */
+/* for mobile devices */
+@media (max-width: 1199.98px) {
+  /* start of - Offcanvas fixed-top main navigation */
+  .nav-overflow-x-hidden {
+    overflow-x: hidden;
+  }
+  .offcanvas-collapse {
+    transform: translateX(100%);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, visibility 0.2s ease-in-out;
+  }
+  .offcanvas-collapse.show {
+    overflow-y: auto;
+    visibility: visible;
+    transform: translateX(0%);
+    height: 100vh;
+    padding-bottom: 4rem;
+  }
+  /* end of - Offcanvas fixed-top main navigation */
+}
