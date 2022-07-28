@@ -13,12 +13,36 @@ body {
 /*#endregion - end of - global styles */
 
 /*#region - start of - header section */
-.carousel-img {
+.header .carousel-img {
   min-height: 19rem;
   -o-object-fit: cover;
   object-fit: cover;
 }
 /*#endregion - end of - header section */
+
+/*#region - start of - feedback section */
+.star-full,
+.star-empty {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+}
+.star-full path,
+.star-empty path {
+  stroke-width: 1.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.star-full path {
+  fill: #fbbf24;
+  stroke: #f59e0b;
+}
+.star-empty path {
+  fill: #fef3c7;
+  stroke: #fcd34d;
+}
+
+/*#endregion - end of - feedback section */
 
 /* for mobile devices */
 @media (max-width: 1199.98px) {
@@ -47,7 +71,7 @@ body {
 /*#region - start of - medium - tablet (768px) devices */
 @media screen and (min-width: 48rem) {
   /*#region - start of - header section */
-  .carousel-img {
+  .header .carousel-img {
     height: 25rem;
   }
   /*#endregion - end of - header section */
@@ -57,7 +81,7 @@ body {
 /*#region - start of - extra large (1200px) devices */
 @media screen and (min-width: 75rem) {
   /*#region - start of - header section */
-  .carousel-img {
+  .header .carousel-img {
     height: 44rem;
   }
   /*#endregion - end of - header section */
@@ -66,8 +90,22 @@ body {
   .explore-img {
     max-height: 45rem;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   /*#endregion - end of - explore section */
+
+  /*#region - start of - feedback section */
+  .feedback-carousel-prev,
+  .feedback-carousel-next {
+    width: 2rem !important;
+    height: 2rem;
+  }
+  .feedback-carousel-prev {
+    left: -1rem;
+  }
+  .feedback-carousel-next {
+    right: -1rem;
+  }
+  /*#endregion - end of - feedback section */
 }
 /*#endregion - end of - extra large devices */
