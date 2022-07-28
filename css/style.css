@@ -11,6 +11,15 @@ body {
 
 /*#endregion - end of - helper classes */
 /*#endregion - end of - global styles */
+
+/*#region - start of - header section */
+.carousel-img {
+  min-height: 19rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+/*#endregion - end of - header section */
+
 /* for mobile devices */
 @media (max-width: 1199.98px) {
   /* start of - Offcanvas fixed-top main navigation */
@@ -34,3 +43,23 @@ body {
   }
   /* end of - Offcanvas fixed-top main navigation */
 }
+
+/*#region - start of - medium - tablet (768px) devices */
+@media screen and (min-width: 48rem) {
+  /*#region - start of - header section */
+  .carousel-img {
+    height: 25rem;
+  }
+  /*#endregion - end of - header section */
+}
+/*#endregion - end of - medium - tablet devices */
+
+/*#region - start of - extra large (1200px) devices */
+@media screen and (min-width: 75rem) {
+  /*#region - start of - header section */
+  .carousel-img {
+    height: 44rem;
+  }
+  /*#endregion - end of - header section */
+}
+/*#endregion - end of - extra large devices */
